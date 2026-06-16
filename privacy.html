@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aureva · Privacy Policy</title>
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background: #faf8f6;
+      color: #1e1e1e;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- header / nav (consistent) ---------- */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1e1e1e;
+      text-decoration: none;
+    }
+    .logo span {
+      color: #b87c4b;
+      font-weight: 300;
+      margin-right: 4px;
+    }
+    .logo i {
+      color: #b87c4b;
+      font-size: 1.8rem;
+      margin-right: 6px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      font-weight: 500;
+      color: #2c2c2c;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #b87c4b;
+    }
+
+    .nav-icons {
+      display: flex;
+      gap: 1.2rem;
+      font-size: 1.25rem;
+    }
+    .nav-icons i {
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .nav-icons i:hover {
+      color: #b87c4b;
+    }
+
+    /* ---------- privacy content ---------- */
+    .privacy-hero {
+      margin: 36px 0 24px;
+    }
+    .privacy-hero h1 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .privacy-hero h1 i {
+      color: #b87c4b;
+      margin-right: 10px;
+    }
+    .privacy-hero .sub {
+      color: #4d4d4d;
+      border-left: 4px solid #b87c4b;
+      padding-left: 16px;
+      font-weight: 400;
+    }
+
+    .privacy-card {
+      background: white;
+      border-radius: 32px;
+      padding: 32px 36px;
+      margin: 28px 0 48px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .privacy-card h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .privacy-card h2:first-of-type {
+      margin-top: 0;
+    }
+    .privacy-card h2 i {
+      color: #b87c4b;
+      font-size: 1.2rem;
+      width: 1.6rem;
+    }
+    .privacy-card p {
+      margin-bottom: 14px;
+      color: #2c2c2c;
+    }
+    .privacy-card ul {
+      margin: 8px 0 18px 24px;
+      color: #2c2c2c;
+    }
+    .privacy-card ul li {
+      margin-bottom: 6px;
+      list-style-type: disc;
+    }
+    .privacy-card .highlight {
+      background: #f5f0eb;
+      padding: 14px 20px;
+      border-radius: 20px;
+      margin: 18px 0 6px;
+      border-left: 4px solid #b87c4b;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1e1e1e;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 60px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s;
+      margin-bottom: 16px;
+    }
+    .back-link i {
+      font-size: 0.9rem;
+    }
+    .back-link:hover {
+      background: #b87c4b;
+    }
+
+    /* ---------- footer ---------- */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.04);
+      margin-top: 16px;
+      padding: 32px 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      color: #3d3d3d;
+    }
+    .footer .copy {
+      font-size: 0.9rem;
+    }
+    .footer .social i {
+      font-size: 1.3rem;
+      margin-left: 16px;
+      color: #3d3d3d;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+    .footer .social i:hover {
+      color: #b87c4b;
+    }
+
+    /* ---------- responsive ---------- */
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+      }
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .nav-icons {
+        justify-content: center;
+      }
+      .privacy-card {
+        padding: 24px 20px;
+      }
+      .privacy-hero h1 {
+        font-size: 2rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .privacy-card h2 {
+        font-size: 1.2rem;
+      }
+      .privacy-card ul {
+        margin-left: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- header (same as home) -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <i class="fas fa-leaf"></i><span>Aureva</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="nav-icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-shopping-bag"></i>
+    </div>
+  </header>
+
+  <!-- privacy intro -->
+  <div class="privacy-hero">
+    <h1><i class="fas fa-shield-halved"></i>Privacy Policy</h1>
+    <div class="sub">Last updated: 16 June 2026 · Aureva ecommerce</div>
+  </div>
+
+  <!-- back to home link -->
+  <a href="#" class="back-link"><i class="fas fa-arrow-left"></i> back to shop</a>
+
+  <!-- privacy content -->
+  <div class="privacy-card">
+
+    <h2><i class="fas fa-circle-info"></i>1. Our Commitment</h2>
+    <p>At Aureva, we take your privacy seriously. This policy outlines how we collect, use, and protect your personal information when you visit our website or make a purchase. By using our services, you agree to the practices described below.</p>
+
+    <h2><i class="fas fa-database"></i>2. Information We Collect</h2>
+    <p>We collect information to provide better service and a seamless shopping experience. This includes:</p>
+    <ul>
+      <li><strong>Personal data:</strong> name, email address, shipping/billing address, phone number.</li>
+      <li><strong>Payment information:</strong> processed securely by our payment partners; we do not store full payment details.</li>
+      <li><strong>Usage data:</strong> pages visited, products viewed, and interactions with our site (via cookies).</li>
+    </ul>
+
+    <h2><i class="fas fa-cookie-bite"></i>3. Cookies & Tracking</h2>
+    <p>We use cookies to enhance your experience, remember your preferences, and analyze site traffic. You can control cookie settings in your browser. Essential cookies are required for site functionality, while optional cookies help us personalize content.</p>
+    <div class="highlight">
+      <i class="fas fa-circle-exclamation" style="color: #b87c4b; margin-right: 8px;"></i>
+      You may opt out of non-essential cookies at any time via our cookie consent tool.
+    </div>
+
+    <h2><i class="fas fa-share-nodes"></i>4. How We Use Your Data</h2>
+    <p>Your information is used to:</p>
+    <ul>
+      <li>Process orders and deliver products.</li>
+      <li>Send order confirmations and shipping updates.</li>
+      <li>Improve our website, products, and customer support.</li>
+      <li>Send promotional emails (only with your consent).</li>
+    </ul>
+
+    <h2><i class="fas fa-handshake"></i>5. Sharing Your Information</h2>
+    <p>We never sell or rent your personal data. We may share limited data with trusted third parties solely for the purpose of order fulfillment (e.g., shipping carriers, payment processors). All partners are contractually bound to protect your data.</p>
+
+    <h2><i class="fas fa-lock"></i>6. Data Security</h2>
+    <p>We implement industry-standard security measures, including SSL encryption, firewalls, and access controls, to protect your data. However, no online transmission is 100% secure; we encourage you to also take precautions when sharing information online.</p>
+
+    <h2><i class="fas fa-user-check"></i>7. Your Rights</h2>
+    <p>You have the right to access, update, or delete your personal data at any time. You can also withdraw consent for marketing emails. To exercise these rights, contact us at <strong>privacy@aureva.com</strong>.</p>
+    <ul>
+      <li>Request a copy of your data.</li>
+      <li>Correct inaccurate information.</li>
+      <li>Ask us to delete your account and data.</li>
+    </ul>
+
+    <h2><i class="fas fa-children"></i>8. Children’s Privacy</h2>
+    <p>Aureva does not knowingly collect personal information from children under 13. If we discover such data, we will delete it promptly. Please contact us if you believe a child has provided us with personal data.</p>
+
+    <h2><i class="fas fa-globe"></i>9. International Transfers</h2>
+    <p>Your data may be processed in countries outside your residence, including the United States. We ensure appropriate safeguards are in place for such transfers, in compliance with applicable data protection laws.</p>
+
+    <h2><i class="fas fa-envelope"></i>10. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy or your data, please reach out:</p>
+    <p style="background: #f5f0eb; padding: 12px 18px; border-radius: 20px; display: inline-block;">
+      <i class="fas fa-envelope" style="color: #b87c4b;"></i> privacy@aureva.com &nbsp;·&nbsp; <i class="fas fa-phone" style="color: #b87c4b;"></i> +1 (800) 555‑0199
+    </p>
+
+    <div style="margin-top: 28px; padding-top: 18px; border-top: 1px solid #e4ded8; font-size: 0.9rem; color: #555;">
+      <i class="fas fa-calendar-day" style="margin-right: 6px;"></i> Effective: 1 January 2026 · Version 2.2
+    </div>
+
+  </div>
+
+  <!-- footer (same as home) -->
+  <footer class="footer">
+    <div class="copy">
+      <i class="far fa-copyright"></i> 2026 Aureva — all rights reserved
+    </div>
+    <div class="social">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-pinterest"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </footer>
+
+</div> <!-- container -->
+</body>
+</html>
